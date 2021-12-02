@@ -59,11 +59,13 @@
   .nav__list-item {
     display: inline-block;
     margin-right: 10px;
+    text-transform: uppercase;
   }
   .form {
     display: flex;
     justify-content: center;
     position: relative;
+    color: #ffffff;
   }
   .form .form__input {
     display: block;
@@ -71,13 +73,15 @@
     margin-top: 40px;
     border-left: transparent;
     border-right: transparent;
-    border-bottom: 1px px solid #fff;
+    border-bottom: 1px solid #fff;
     width: 280px;
     height: 20px;
     left: 20px;
     top: 113px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: rgba(0, 0, 0, 0);
+  }
+  .form .form__input::placeholder {
+    color: #fff;
   }
   .form .btn-search {
     width: 18px;

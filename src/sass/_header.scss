@@ -34,28 +34,31 @@
     &-item {
       display: inline-block;
       margin-right: 10px;
+      text-transform: uppercase;
     }
   }
   .form {
     display: flex;
     justify-content: center;
     position: relative;
+    color: #ffffff;
     .form__input {
       display: block;
       color: seashell;
       margin-top: 40px;
       border-left: transparent;
       border-right: transparent;
-      border-bottom: 1px px solid #fff;
+      border-bottom: 1px solid #fff;
 
       width: 280px;
       height: 20px;
       left: 20px;
       top: 113px;
 
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
       background-color: rgba($color: #000000, $alpha: 0);
+    }
+    .form__input::placeholder {
+      color: #fff;
     }
     .btn-search {
       width: 18px;
